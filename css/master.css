@@ -1,0 +1,67 @@
+/* reset rules */
+
+  /* note: universal selector doesn't seem to work on bootstrap's elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+
+    /* to overwrite browser's style */
+    text-decoration: none;
+    color: black;
+  }
+
+  li {
+
+    /* to overwrite browser's style */
+    list-style-type: none;
+  }
+/* /reset rules */
+
+/* rules used (or usable) in different parts of the page */
+
+  /* to center a box both vertically and horizontally in its parent */
+  .absolute-centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/* /rules used (or usable) in different parts of the page */
+
+/* rules used in specific parts of the page */
+/* /rules used in specific parts of the page */
+
+/* rules for specific width ranges */
+  @media screen and (max-width: 768px) {
+
+    /* rules used in specific parts of the page */
+    /* /rules used in specific parts of the page */
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    /* rules used in specific parts of the page */
+    /* /rules used in specific parts of the page */
+
+  }
+
+  @media screen and (max-width: 1199px) {
+
+    /* rules used in specific parts of the page */
+    /* /rules used in specific parts of the page */
+
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    /* rules used in specific parts of the page */
+    /* /rules used in specific parts of the page */
+
+  }
+/* /rules for specific width ranges */
