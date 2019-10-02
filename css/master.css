@@ -34,33 +34,59 @@
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
+
+  #navbar {
+    background-color: rgb(2, 72, 255);
+  }
+
+  #navbar .row-lower-res {
+    height: 90px;
+    background-color: green; /* debug */
+  }
+
+  #navbar .row-lower-res .my_fa-bars {
+    float: right;
+
+    /* to center it in the navbar */
+    line-height: 90px;
+    color: white;
+
+    opacity: 0.5;
+  }
+
+  #navbar .first-row-higher-res {
+    height: 40px;
+    background-color: pink; /* debug */
+  }
+
+  #navbar .second-row-higher-res {
+    height: 65px;
+    background-color: grey; /* debug */
+  }
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
-  @media screen and (max-width: 768px) {
-
-    /* rules used in specific parts of the page */
-    /* /rules used in specific parts of the page */
-
-  }
-
   @media screen and (max-width: 991px) {
 
     /* rules used in specific parts of the page */
+    #navbar .first-row-higher-res,
+    #navbar .second-row-higher-res  {
+      display: none;
+    }
     /* /rules used in specific parts of the page */
 
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 992px) {
 
     /* rules used in specific parts of the page */
-    /* /rules used in specific parts of the page */
+    #navbar {
+      background-color: white;
+    }
 
-  }
-
-  @media screen and (min-width: 1200px) {
-
-    /* rules used in specific parts of the page */
+    #navbar .row-lower-res {
+      display: none;
+    }
     /* /rules used in specific parts of the page */
 
   }
