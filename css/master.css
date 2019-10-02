@@ -33,67 +33,107 @@
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-  #navbar .row-lower-res {
-    height: 90px;
-    background-color: green; /* debug */
-  }
 
-  #navbar .row-lower-res svg {
-    fill: white;
-  }
+  /* navbar */
+    #navbar-header-container {
+      background-image: url(../img/under-water-background.jpg);
+    }
 
-  #navbar .row-lower-res .my_fa-bars {
-    float: right;
+    #navbar .row-lower-res {
+      height: 90px;
+    }
 
-    /* to center it in the navbar */
-    line-height: 90px;
-    color: white;
+    #navbar .row-lower-res svg {
+      fill: white;
+    }
 
-    opacity: 0.5;
-  }
+    #navbar .row-lower-res .my_fa-bars {
+      float: right;
 
-  #navbar .first-row-higher-res {
-    height: 40px;
-    background-color: pink; /* debug */
-  }
+      /* to center it in the navbar */
+      line-height: 90px;
+      color: white;
 
-  #navbar .second-row-higher-res {
-    height: 65px;
-    background-color: grey; /* debug */
-  }
+      opacity: 0.5;
+    }
 
-  #navbar .second-row-higher-res svg {
-    fill: rgb(68, 145, 255);
-  }
+    #navbar .first-row-higher-res {
+      height: 40px;
+      background-color: pink; /* debug */
+    }
 
-  #navbar .second-row-higher-res nav {
-    display: inline-block;
-  }
+    #navbar .second-row-higher-res {
+      height: 65px;
+      background-color: grey; /* debug */
+    }
 
-  #navbar .second-row-higher-res .btn {
-    float: right;
+    #navbar .second-row-higher-res svg {
+      fill: rgb(68, 145, 255);
+    }
 
-    /* to align it vertically */
-    margin-top: 16px;
+    #navbar .second-row-higher-res nav {
+      display: inline-block;
+    }
 
-    border: 1px solid rgb(68, 145, 255);
-    border-radius: 5px;
-    font-weight: bold;
-  }
+    #navbar .second-row-higher-res .btn {
+      float: right;
 
-  #navbar .second-row-higher-res .btn-default {
-    color: rgb(68, 145, 255);
-  }
+      /* to align it vertically */
+      margin-top: 16px;
+
+      border: 1px solid rgb(68, 145, 255);
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    #navbar .second-row-higher-res .btn-default {
+      color: rgb(68, 145, 255);
+    }
+  /* /navbar */
+
+  /* header */
+    #header-1st-row {
+      margin-top: 15px;
+      border-radius: 5px;
+      background-color: rgb(0, 180, 123);
+    }
+
+    #header-2nd-row-2nd-col {
+      background-color: white;
+    }
+
+    #header-2nd-row-2nd-col {
+      text-align: center;
+    }
+
+    .txt-with-horizontal-lines {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+
+    .txt-with-horizontal-lines span {
+      background:#fff;
+      padding: 0 10px;
+    }
+  /* /header */
+
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
   @media screen and (max-width: 991px) {
 
     /* rules used in specific parts of the page */
-    #navbar .first-row-higher-res,
-    #navbar .second-row-higher-res  {
-      display: none;
-    }
+
+      /* navbar */
+        #navbar .first-row-higher-res,
+        #navbar .second-row-higher-res  {
+          display: none;
+        }
+      /* /navbar */
+
     /* /rules used in specific parts of the page */
 
   }
@@ -101,13 +141,17 @@
   @media screen and (min-width: 992px) {
 
     /* rules used in specific parts of the page */
-    #navbar {
-      background-color: white;
-    }
 
-    #navbar .row-lower-res {
-      display: none;
-    }
+      /* navbar */
+        #navbar {
+          background-color: white;
+        }
+
+        #navbar .row-lower-res {
+          display: none;
+        }
+      /* /navbar */
+
     /* /rules used in specific parts of the page */
 
   }
