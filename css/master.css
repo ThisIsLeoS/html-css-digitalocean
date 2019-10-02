@@ -30,18 +30,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-
-  #navbar {
-    background-color: rgb(2, 72, 255);
-  }
-
   #navbar .row-lower-res {
     height: 90px;
     background-color: green; /* debug */
+  }
+
+  #navbar .row-lower-res svg {
+    fill: white;
   }
 
   #navbar .row-lower-res .my_fa-bars {
@@ -62,6 +60,29 @@
   #navbar .second-row-higher-res {
     height: 65px;
     background-color: grey; /* debug */
+  }
+
+  #navbar .second-row-higher-res svg {
+    fill: rgb(68, 145, 255);
+  }
+
+  #navbar .second-row-higher-res nav {
+    display: inline-block;
+  }
+
+  #navbar .second-row-higher-res .btn {
+    float: right;
+
+    /* to align it vertically */
+    margin-top: 16px;
+
+    border: 1px solid rgb(68, 145, 255);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  #navbar .second-row-higher-res .btn-default {
+    color: rgb(68, 145, 255);
   }
 /* /rules used in specific parts of the page */
 
