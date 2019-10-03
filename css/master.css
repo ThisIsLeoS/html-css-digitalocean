@@ -120,6 +120,23 @@
     }
   /* /header */
 
+  /* main */
+    #businesses-section {
+      text-align: center;
+    }
+
+    #businesses-section ul li {
+      display: inline-block;
+
+      /* -4px to delete the space the browser put between block elements */
+      width: calc(50% - 4px);
+    }
+
+    #businesses-section ul li img {
+      max-width: 80%;
+    }
+  /* /main */
+
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
@@ -135,6 +152,22 @@
       /* /navbar */
 
     /* /rules used in specific parts of the page */
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    /* rules used in specific parts of the page */
+
+      /* main */
+      #businesses-section ul li {
+
+        /* to put logo images into two side by side columns */
+        width: calc((100% / 6) - 4px);
+      }
+      /* /main */
+
+    /* rules used in specific parts of the page */
 
   }
 
