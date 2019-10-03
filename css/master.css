@@ -28,6 +28,11 @@
     max-width: 1200px;
   }
 
+  #deploy-section .container-fluid,
+  #designed-section .container-fluid {
+    max-width: 900px;
+  }
+
   /* to center a box both vertically and horizontally in its parent */
   .absolute-centering {
     position: absolute;
@@ -126,9 +131,14 @@
   /* /header */
 
   /* main */
+    #businesses-section,
+    #deploy-section,
+    #designed-section {
+      text-align: center;
+    }
+
     #businesses-section {
       background-color: rgb(243, 245, 249);
-      text-align: center;
     }
 
     #businesses-section ul li {
@@ -142,8 +152,10 @@
       max-width: 80%;
     }
 
-    #deploy-section .container-fluid {
-      max-width: 900px;
+    #designed-section .carousel-img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
   /* /main */
 
