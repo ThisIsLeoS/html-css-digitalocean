@@ -22,6 +22,11 @@
 /* /reset rules */
 
 /* rules used (or usable) in different parts of the page */
+  header > .container-fluid,
+  #businesses-section > .container-fluid,
+  #deploy-section > .container-fluid {
+    max-width: 1200px;
+  }
 
   /* to center a box both vertically and horizontally in its parent */
   .absolute-centering {
@@ -122,6 +127,7 @@
 
   /* main */
     #businesses-section {
+      background-color: rgb(243, 245, 249);
       text-align: center;
     }
 
