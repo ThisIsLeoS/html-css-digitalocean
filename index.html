@@ -114,18 +114,20 @@
         <!-- /header - 1st row -->
 
         <!-- header - 2nd row -->
-        <div class="row">
-          <div id="header-2nd-row">
+        <div id="header-2nd-row">
+          <div class="row">
 
             <!-- header - 2nd row - 1st col -->
             <div class="col-xs-12 col-sm-6">
               <div id="header-2nd-row-1st-col">
-                <h1>
-                  Welcome to the developer cloud
-                </h1>
-                <p>
-                  DigitalOcean makes it simple to launch in the cloud and scale up as you grow—with an intuitive control panel, predictable pricing, team accounts and more.
-                </p>
+                <div class="inside-container">
+                  <h1>
+                    Welcome to the developer cloud
+                  </h1>
+                  <p>
+                    DigitalOcean makes it simple to launch in the cloud and scale up as you grow—with an intuitive control panel, predictable pricing, team accounts and more.
+                  </p>
+                </div>
               </div>
             </div>
             <!-- header - 2nd row - 1st col -->
@@ -144,12 +146,21 @@
                   <div class="form-group">
                     <input type="password" class="form-control" placeholder="Create a password">
                   </div>
-                  <button type="button" class="btn btn-default">Create your account</button>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Create a password">
+                  </div>
+                  <button type="button" class="btn btn-default btn-block submit_btn">Create your account</button>
                   <div class="txt-with-horizontal-lines">
                     <span>or sign up with</span>
                   </div>
-                  <button type="button" class="btn btn-default">Create your account</button>
-                  <button type="button" class="btn btn-default">Create your account</button>
+                  <button type="button" class="btn btn-default .btn-lg google_btn">
+                    <img src="img/google-logo.svg">
+                    Google
+                  </button>
+                  <button type="button" class="btn btn-default .btn-lg github_btn">
+                    <img src="img/github-logo.svg">
+                    GitHub
+                  </button>
                   <p>
                     By signing up you agree to the
                     <a href="#">Terms of Service</a>.
@@ -179,22 +190,22 @@
             <h2>Innovative businesses trust DigitalOcean</h2>
             <ul>
               <li>
-                <img src="img/docker-logo.png" alt="">
+                <img src="img/docker-logo.png" alt="The Docker logo">
               </li>
               <li>
-                <img src="img/gitlab-logo.png" alt="">
+                <img src="img/gitlab-logo.png" alt="The GitLab logo">
               </li>
               <li>
-                <img src="img/slack-logo.png" alt="">
+                <img src="img/slack-logo.png" alt="The Slack logo">
               </li>
               <li>
-                <img src="img/hashicorp-logo.png" alt="">
+                <img src="img/hashicorp-logo.png" alt="The hashicorp logo">
               </li>
               <li>
-                <img src="img/wework-logo.png" alt="">
+                <img src="img/wework-logo.png" alt="The WeWork logo">
               </li>
               <li>
-                <img src="img/splunk-logo.png" alt="">
+                <img src="img/splunk-logo.png" alt="The Splunk logo">
               </li>
             </ul>
             <a href="#">
@@ -337,7 +348,7 @@
             </a>
           </div>
           <div class="col-xs-12 col-sm-8">
-            <img class="carousel-img" src="img/screenshot-create-droplet.jpg" alt="">
+            <img class="carousel-img" src="img/screenshot-create-droplet.jpg" alt="A screenshot of the &quot;Create Droplets&quot; page of this site">
           </div>
           <div class="hidden-xs col-sm-2">
             <a href="#">

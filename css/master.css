@@ -1,12 +1,4 @@
 /* reset rules */
-
-  /* note: universal selector doesn't seem to work on bootstrap's elements */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   a {
     color: black;
   }
@@ -16,6 +8,12 @@
 
     /* to overwrite the style of other stylesheets */
     text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   li {
@@ -34,20 +32,15 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  #navbar > .container-fluid,
   header > .container-fluid,
   #business-logos-section > .container-fluid,
   #deploy-section > .container-fluid {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 
   #deploy-section .container-fluid,
   #designed-section .container-fluid {
     max-width: 900px;
-  }
-
-  #built-for-business-section {
-
   }
 
   /* to center a box both vertically and horizontally in its parent */
@@ -61,11 +54,15 @@
 
 /* rules used in specific parts of the page */
 
-    #navbar-header-container {
-      background-image: url(../img/under-water-background.jpg);
-    }
+  #navbar-header-container {
+    background-image: url(../img/under-water-background.jpg);
+  }
 
   /* navbar */
+    #navbar .container-fluid {
+      max-width: 1200px;
+    }
+
     #navbar .row-lower-res {
       height: 90px;
     }
@@ -143,42 +140,118 @@
       /* to align it vertically */
       margin-top: 16px;
 
-      border: 1px solid rgb(68, 145, 255);
+      border: 1px solid #0069ff;
       border-radius: 5px;
       font-weight: bold;
     }
 
     #navbar .second-row-higher-res .btn-default {
-      color: rgb(68, 145, 255);
+      color: #0069ff;
     }
   /* /navbar */
 
   /* header */
     #header-1st-row {
-      margin-top: 15px;
+      margin-top: 10px;
       border-radius: 5px;
+      padding: 10px 0;
       background-color: rgb(0, 180, 123);
-    }
-
-    #header-2nd-row-2nd-col {
-      background-color: white;
-    }
-
-    #header-2nd-row-2nd-col {
       text-align: center;
+    }
+
+    #header-1st-row a {
+      color: white;
+    }
+
+    #header-2nd-row {
+      margin: 30px 0 60px;
+    }
+
+    #header-2nd-row-1st-col {
+      color: white;
+    }
+
+    #header-2nd-row-1st-col h1 {
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    #header-2nd-row-1st-col p {
+      margin-top: 16px;
+      color: rgb(204, 219, 255);
+      font-size: 24px;
+    }
+
+    #header-2nd-row-2nd-col {
+      margin-top: 30px;
+    }
+
+    #header-2nd-row-2nd-col form {
+      border-radius: 5px;
+      padding: 20px 25px 30px;
+      background-color: white;
+      text-align: center;
+    }
+
+    #header-2nd-row-2nd-col form h2 {
+      margin-bottom: 25px;
+    }
+
+    #header-2nd-row-2nd-col form .submit_btn.btn-default {
+      background-color: #0069ff;
+      color: white;
+      font-weight: bold;
+      padding: 10px 0;
     }
 
     .txt-with-horizontal-lines {
       width: 100%;
-      text-align: center;
+      margin: 31px 0;
       border-bottom: 1px solid #000;
+      text-align: center;
       line-height: 0.1em;
-      margin: 10px 0 20px;
     }
 
     .txt-with-horizontal-lines span {
       background:#fff;
       padding: 0 10px;
+    }
+
+    #header-2nd-row-2nd-col form .btn-default.google_btn,
+    #header-2nd-row-2nd-col form .btn-default.github_btn {
+
+      /* -4px to delete the space the browser puts between block elements */
+      width: calc(49% - 4px);
+      background-color: #f2f8ff;
+      border: 1px solid rgba(0, 105, 255, .2);
+      font-weight: bold;
+    }
+
+    #header-2nd-row-2nd-col form .btn-default.google_btn {
+      margin-right: 1%
+    }
+
+    #header-2nd-row-2nd-col form .btn-default.github_btn {
+      margin-left: 1%;
+    }
+
+    #header-2nd-row-2nd-col form .btn-default.google_btn:hover,
+    #header-2nd-row-2nd-col form .btn-default.github_btn:hover {
+      background-color: rgba(0, 105, 255, .2);
+    }
+
+    #header-2nd-row-2nd-col form .btn-default img {
+      float: left;
+    }
+
+    #header-2nd-row-2nd-col form p {
+      margin-top: 25px;
+      font-size: 12px;
+    }
+
+    #header-2nd-row-2nd-col form p a {
+      color: #0069ff;
+      text-decoration: underline;
     }
   /* /header */
 
@@ -196,7 +269,7 @@
     #business-logos-section ul li {
       display: inline-block;
 
-      /* -4px to delete the space the browser put between block elements */
+      /* -4px to delete the space the browser puts between block elements */
       width: calc(50% - 4px);
     }
 
@@ -234,6 +307,31 @@
     /* rules used in specific parts of the page */
 
       /* main */
+      #header-2nd-row-2nd-col {
+        margin-top: 10px;
+      }
+
+      #header-2nd-row-1st-col {
+        position: relative;
+      }
+
+      #header-2nd-row-1st-col .inside-container {
+        position: absolute;
+
+        /* 505px is the height of the #header-2nd-row-2nd-col */
+        top: calc(505px / 100 * 50);
+        left: 0;
+        transform: translate(0, -50%);
+      }
+
+      #header-2nd-row-2nd-col form {
+        margin-left: 40px;
+      }
+
+      #header-2nd-row-1st-col h1 {
+        font-size: 46px;
+      }
+
       #business-logos-section ul li {
 
         /* to put logo images into two side by side columns */
@@ -267,6 +365,10 @@
 
           /* to not occupy the space of the fixed navbar */
           padding-top: 105px;
+        }
+
+        #header-1st-row {
+          margin-top: 40px;
         }
       /* /header */
 
