@@ -23,7 +23,7 @@
 
 /* rules used (or usable) in different parts of the page */
   header > .container-fluid,
-  #businesses-section > .container-fluid,
+  #business-logos-section > .container-fluid,
   #deploy-section > .container-fluid {
     max-width: 1200px;
   }
@@ -131,24 +131,24 @@
   /* /header */
 
   /* main */
-    #businesses-section,
+    #business-logos-section,
     #deploy-section,
     #designed-section {
       text-align: center;
     }
 
-    #businesses-section {
+    #business-logos-section {
       background-color: rgb(243, 245, 249);
     }
 
-    #businesses-section ul li {
+    #business-logos-section ul li {
       display: inline-block;
 
       /* -4px to delete the space the browser put between block elements */
       width: calc(50% - 4px);
     }
 
-    #businesses-section ul li img {
+    #business-logos-section ul li img {
       max-width: 80%;
     }
 
@@ -182,7 +182,7 @@
     /* rules used in specific parts of the page */
 
       /* main */
-      #businesses-section ul li {
+      #business-logos-section ul li {
 
         /* to put logo images into two side by side columns */
         width: calc((100% / 6) - 4px);
