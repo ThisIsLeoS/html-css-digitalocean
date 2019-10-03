@@ -148,6 +148,11 @@
     #navbar .second-row-higher-res .btn-default {
       color: #0069ff;
     }
+
+    #navbar .second-row-higher-res .btn-default:hover {
+      background-color: #0069ff;
+      color: white;
+    }
   /* /navbar */
 
   /* header */
