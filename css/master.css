@@ -44,7 +44,6 @@
     max-width: 1100px;
   }
 
-  #deploy-section .container-fluid,
   #designed-section .container-fluid {
     max-width: 900px;
   }
@@ -308,28 +307,61 @@
       margin: 60px 0;
     }
 
-    #deploy-section-2nd-row {
-      margin-top: 60px;
-    }
-
-    #deploy-section .container-fluid .row:first-child h2,
-    #deploy-section .container-fluid .row:first-child p {
+    #deploy-section-1st-row h2,
+    #deploy-section-1st-row p {
       text-align: center;
     }
 
-    #deploy-section .container-fluid .row:first-child h2 {
+    #deploy-section-1st-row h2 {
       font-weight: bold;
       font-size: 36px;
     }
 
-    #deploy-section .container-fluid .row:first-child p {
+    #deploy-section-1st-row p {
       margin-top: 18px;
       color: rgba(3,27,78,.75);
       font-size: 18px;
     }
 
-    #deploy-section .container-fluid .row:last-child ul {
+    #deploy-section-2nd-row {
+      max-width: 900px;
+      margin: 60px auto 0 auto;
+    }
+    
+    #deploy-section-2nd-row ul {
+      margin-bottom: 40px;
+    }
+
+    #deploy-section-2nd-row li a {
+      display: inline-block;
+      border-left: 2px solid lightgrey;
+      padding: 15px 30px;
+      color: grey;
       font-size: 16px;
+    }
+
+    #deploy-section-2nd-row li a:hover {
+      border-left: 2px solid #0069ff;
+      color: black;
+    }
+
+    #deploy-section-2nd-row h3 {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    #deploy-section-2nd-row p {
+      margin: 16px 0 32px;
+      color: rgba(3,27,78,.75);
+    }
+
+    #deploy-section-2nd-row-2nd-col .row [class*="col"]:last-child p {
+      margin-bottom: 0;
+    }
+
+    #designed-section {
+      background-color: rgb(243, 245, 249);
     }
 
     #designed-section .carousel-img {
@@ -391,6 +423,12 @@
 
         /* to put logo images into two side by side columns */
         width: calc((100% / 6) - 4px);
+      }
+
+      /* paragraph of the second to last and the last col */
+      #deploy-section-2nd-row-2nd-col .row [class*="col"]:nth-child(3) p,
+      #deploy-section-2nd-row-2nd-col .row [class*="col"]:last-child p {
+        margin-bottom: 0;
       }
       /* /main */
 
