@@ -10,10 +10,16 @@
     text-decoration: none;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, p {
+
+    /* to overwrite the style of other stylesheets */
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  }
+
+  ul {
+
+    /* to overwrite the style of other stylesheets */
+    padding-left: 0;
   }
 
   li {
@@ -67,12 +73,11 @@
       height: 90px;
     }
 
-    #navbar .row-lower-res svg {
+    #navbar .row-lower-res .logo-link {
 
       /* to center it in the navbar */
+      display: inline-block;
       margin-top: 32px;
-
-      fill: white;
     }
 
     #navbar .row-lower-res .my_fa-bars {
@@ -121,13 +126,19 @@
       height: 65px;
     }
 
-    #navbar .second-row-higher-res svg {
-      fill: #0069ff;
-      /* margin-top: 20px;  */
+    #navbar .second-row-higher-res .logo-link {
+
+      /* to center it in the second row of the navbar */
+      display: inline-block;
+      margin-top: 17px;
     }
 
     #navbar .second-row-higher-res nav {
       display: inline-block;
+
+      /* to center it in the second row of the navbar */
+      margin-top: 24px;
+
       margin-left: 25px;
     }
 
@@ -263,13 +274,18 @@
 
   /* main */
     #business-logos-section,
-    #deploy-section,
     #designed-section {
       text-align: center;
     }
 
     #business-logos-section {
+      padding: 60px 0;
       background-color: rgb(243, 245, 249);
+    }
+
+    #business-logos-section h2 {
+      color: grey;
+      font-size: 15px;
     }
 
     #business-logos-section ul li {
@@ -281,6 +297,39 @@
 
     #business-logos-section ul li img {
       max-width: 80%;
+    }
+
+    #business-logos-section .container-fluid .row:last-child a {
+      color: #0069ff;
+      font-size: 16px;
+    }
+
+    #deploy-section {
+      margin: 60px 0;
+    }
+
+    #deploy-section-2nd-row {
+      margin-top: 60px;
+    }
+
+    #deploy-section .container-fluid .row:first-child h2,
+    #deploy-section .container-fluid .row:first-child p {
+      text-align: center;
+    }
+
+    #deploy-section .container-fluid .row:first-child h2 {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    #deploy-section .container-fluid .row:first-child p {
+      margin-top: 18px;
+      color: rgba(3,27,78,.75);
+      font-size: 18px;
+    }
+
+    #deploy-section .container-fluid .row:last-child ul {
+      font-size: 16px;
     }
 
     #designed-section .carousel-img {
