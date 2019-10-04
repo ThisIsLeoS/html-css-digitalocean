@@ -123,6 +123,7 @@
 
     #navbar .second-row-higher-res svg {
       fill: #0069ff;
+      /* margin-top: 20px;  */
     }
 
     #navbar .second-row-higher-res nav {
