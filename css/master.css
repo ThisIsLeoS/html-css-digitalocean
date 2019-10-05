@@ -41,11 +41,13 @@
 
   header > .container-fluid,
   #business-logos-section > .container-fluid,
-  #deploy-section > .container-fluid {
-    max-width: 1100px;
+  #deploy-section > .container-fluid,
+  #built-for-business-section > .container-fluid,
+  #service-customers-section > .container-fluid {
+    max-width: 1200px;
   }
 
-  #designed-section .container-fluid {
+  #designed-section > .container-fluid {
     max-width: 900px;
   }
 
@@ -66,7 +68,7 @@
 
   /* navbar */
     #navbar .container-fluid {
-      max-width: 1200px;
+      max-width: 1300px;
     }
 
     #navbar .row-lower-res {
@@ -214,7 +216,7 @@
       margin-bottom: 25px;
     }
 
-    #header-2nd-row-2nd-col form .submit_btn.btn-default {
+    #header-2nd-row-2nd-col form .my_btn-submit.btn-default {
       background-color: #0069ff;
       color: white;
       font-weight: bold;
@@ -234,8 +236,8 @@
       padding: 0 10px;
     }
 
-    #header-2nd-row-2nd-col form .btn-default.google_btn,
-    #header-2nd-row-2nd-col form .btn-default.github_btn {
+    #header-2nd-row-2nd-col form .btn-default.my_btn-google,
+    #header-2nd-row-2nd-col form .btn-default.my_btn-github {
 
       /* -4px to delete the space the browser puts between block elements */
       width: calc(49% - 4px);
@@ -244,16 +246,16 @@
       font-weight: bold;
     }
 
-    #header-2nd-row-2nd-col form .btn-default.google_btn {
+    #header-2nd-row-2nd-col form .btn-default.my_btn-google {
       margin-right: 1%
     }
 
-    #header-2nd-row-2nd-col form .btn-default.github_btn {
+    #header-2nd-row-2nd-col form .btn-default.my_btn-github {
       margin-left: 1%;
     }
 
-    #header-2nd-row-2nd-col form .btn-default.google_btn:hover,
-    #header-2nd-row-2nd-col form .btn-default.github_btn:hover {
+    #header-2nd-row-2nd-col form .btn-default.my_btn-google:hover,
+    #header-2nd-row-2nd-col form .btn-default.my_btn-github:hover {
       background-color: rgba(0, 105, 255, .2);
     }
 
@@ -269,6 +271,10 @@
     #header-2nd-row-2nd-col form p a {
       color: #0069ff;
       text-decoration: underline;
+    }
+
+    #header-2nd-row-2nd-col form p a:hover {
+      color: blue;
     }
   /* /header */
 
@@ -302,6 +308,10 @@
     #business-logos-section .container-fluid .row:last-child a {
       color: #0069ff;
       font-size: 16px;
+    }
+
+    #business-logos-section .container-fluid .row:last-child a:hover {
+      color: blue;
     }
 
     #deploy-section {
@@ -381,13 +391,6 @@
       font-size: 20px;
     }
 
-    /* TODO:  */
-    /* #designed-section .carousel-img {
-      display: block;
-      width: 100%;
-      height: auto;
-    } */
-
     #designed-section-2nd-row .carousel-img {
       width: 100%;
       height: auto;
@@ -402,6 +405,105 @@
       color: rgba(3,27,78,.75);
       font-size: 16px;
       line-height: 1.7;
+    }
+
+    #built-for-business-section {
+      padding: 65px 0;
+    }
+
+    #built-for-business-section-1st-row h2 {
+      font-weight: bold;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    #built-for-business-section-2nd-row {
+      margin-top: 23px;
+    }
+
+    #built-for-business-section-2nd-row img {
+      margin-top: 33px;
+    }
+
+    #built-for-business-section-2nd-row h3 {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    #built-for-business-section-2nd-row p {
+      margin: 15px 0;
+      color: rgba(3,27,78,.75);
+      font-size: 16px;
+    }
+
+    #built-for-business-section-2nd-row a {
+      color: #0069ff;
+      font-size: 16px;
+    }
+
+    #built-for-business-section-2nd-row a:hover {
+      color: blue;
+    }
+
+    #service-customers-section {
+      padding: 65px 0;
+      background-image: url("../img/world-map.svg");
+      background-color: #031b4e;
+    }
+
+    #service-customers-section-1st-row {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    #service-customers-section-1st-row h2 {
+      color: white;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    #service-customers-section-2nd-row {
+        margin-top: 55px;
+    }
+
+    #service-customers-section table {
+      font-size: 13px;
+    }
+
+    /* select the table in the last column of the second row */
+    #service-customers-section-2nd-row [class*="col-"]:last-child table {
+      margin-bottom: 0;
+    }
+
+    #service-customers-section-2nd-row tr td {
+      border-top: 1px solid rgb(255, 255, 255, 0.2);
+    }
+
+    #service-customers-section-2nd-row tr:first-child td {
+      border-top: hidden;
+    }
+
+    #service-customers-section-2nd-row tr td:first-child {
+      color: white;
+      font-weight: bold;
+    }
+
+    #service-customers-section-2nd-row tr td:nth-child(2) {
+      color: rgb(255, 255, 255, 0.6);
+    }
+
+    #service-customers-section-2nd-row tr td:last-child a {
+      color: #00d7d2;
+      font-weight: bold;
+    }
+
+    #service-customers-section-2nd-row tr td:last-child a:hover {
+      color: #0069ff;
+    }
+
+    #service-customers-section-2nd-row tr td:last-child i {
+      padding-left: 7px;
     }
   /* /main */
 
@@ -492,23 +594,11 @@
         color: #0069ff;
       }
 
-      /* TODO:  */
-      /* #designed-section-2nd-row-1st-col,
-      #designed-section-2nd-row-3rd-col {
-        position: relative;
-        max-height: 369px;
-      } */
-
-      /* TODO:  */
-      /* #designed-section-2nd-row-1st-col a,
-      #designed-section-2nd-row-3rd-col a {
-        position: absolute;
-
-        /* 369px is the height of the carousel's image */
-        /* top: calc(369px / 100 * 50);
-        left: 0;
-        transform: translate(0, -50%); */
-      } */
+      /* select the table in the first and last column of the second row */
+      #service-customers-section-2nd-row [class*="col-"]:first-child table,
+      #service-customers-section-2nd-row [class*="col-"]:last-child table {
+        margin-bottom: 0;
+      }
       /* /main */
 
     /* rules used in specific parts of the page */
