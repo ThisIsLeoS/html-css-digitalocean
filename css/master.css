@@ -36,6 +36,7 @@
 
   body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
   }
 
   header > .container-fluid,
@@ -327,7 +328,7 @@
       max-width: 900px;
       margin: 60px auto 0 auto;
     }
-    
+
     #deploy-section-2nd-row ul {
       margin-bottom: 40px;
     }
@@ -361,13 +362,46 @@
     }
 
     #designed-section {
+      padding: 65px 0;
       background-color: rgb(243, 245, 249);
     }
 
-    #designed-section .carousel-img {
+    #designed-section-1st-row {
+      margin-bottom: 65px;
+    }
+
+    #designed-section-1st-row h2 {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    #designed-section-1st-row p {
+      margin-top: 16px;
+      color: rgba(3,27,78,.75);
+      font-size: 20px;
+    }
+
+    /* TODO:  */
+    /* #designed-section .carousel-img {
       display: block;
       width: 100%;
       height: auto;
+    } */
+
+    #designed-section-2nd-row .carousel-img {
+      width: 100%;
+      height: auto;
+    }
+
+    #designed-section-2nd-row i {
+      display: none;
+    }
+
+    #designed-section-3rd-row p {
+      margin-top: 35px;
+      color: rgba(3,27,78,.75);
+      font-size: 16px;
+      line-height: 1.7;
     }
   /* /main */
 
@@ -430,6 +464,51 @@
       #deploy-section-2nd-row-2nd-col .row [class*="col"]:last-child p {
         margin-bottom: 0;
       }
+
+      #designed-section-2nd-row {
+        position: relative;
+      }
+
+      #designed-section-2nd-row .carousel-img {
+        width: 70%;
+        margin: auto;
+      }
+
+      #designed-section-2nd-row i {
+        display: inline;
+        position: absolute;
+        top: 50%;
+      }
+
+      #designed-section-2nd-row .fa-chevron-left {
+        left: 7%;
+      }
+
+      #designed-section-2nd-row .fa-chevron-right {
+        right: 7%;
+      }
+
+      #designed-section-2nd-row i:hover {
+        color: #0069ff;
+      }
+
+      /* TODO:  */
+      /* #designed-section-2nd-row-1st-col,
+      #designed-section-2nd-row-3rd-col {
+        position: relative;
+        max-height: 369px;
+      } */
+
+      /* TODO:  */
+      /* #designed-section-2nd-row-1st-col a,
+      #designed-section-2nd-row-3rd-col a {
+        position: absolute;
+
+        /* 369px is the height of the carousel's image */
+        /* top: calc(369px / 100 * 50);
+        left: 0;
+        transform: translate(0, -50%); */
+      } */
       /* /main */
 
     /* rules used in specific parts of the page */
