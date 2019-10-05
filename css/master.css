@@ -36,6 +36,7 @@
 
   body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
     line-height: 1.5;
   }
 
@@ -47,7 +48,8 @@
     max-width: 1200px;
   }
 
-  #designed-section > .container-fluid {
+  #designed-section > .container-fluid,
+  #development-teams-section > .container-fluid {
     max-width: 900px;
   }
 
@@ -84,11 +86,11 @@
 
     #navbar .row-lower-res .my_fa-bars {
       float: right;
+      color: white;
 
       /* to center it in the navbar */
       line-height: 90px;
 
-      color: white;
       opacity: 0.5;
     }
 
@@ -102,12 +104,15 @@
     }
 
     #navbar .first-row-higher-res a {
-      color: grey;
+      color: #5b6987;
+      font-weight: bold;
+      opacity: 0.9;
     }
 
     #navbar a:focus,
     #navbar a:hover {
-      color: rgb(0, 105, 255);
+      color: #0069ff;
+      opacity: 1;
     }
 
     #navbar .first-row-higher-res #navbar-new-button {
@@ -223,6 +228,10 @@
       padding: 10px 0;
     }
 
+    #header-2nd-row-2nd-col form .my_btn-submit.btn-default:hover {
+      background-color: blue;
+    }
+
     .txt-with-horizontal-lines {
       width: 100%;
       margin: 31px 0;
@@ -279,19 +288,17 @@
   /* /header */
 
   /* main */
-    #business-logos-section,
-    #designed-section {
-      text-align: center;
-    }
-
     #business-logos-section {
       padding: 60px 0;
       background-color: rgb(243, 245, 249);
+      text-align: center;
     }
 
     #business-logos-section h2 {
-      color: grey;
+      color: #031b4e;
+      font-weight: bold;
       font-size: 15px;
+      opacity: 0.4;
     }
 
     #business-logos-section ul li {
@@ -347,13 +354,16 @@
       display: inline-block;
       border-left: 2px solid lightgrey;
       padding: 15px 30px;
-      color: grey;
+      color: #031b4e;
+      font-weight: bold;
       font-size: 16px;
+      opacity: 0.4;
     }
 
     #deploy-section-2nd-row li a:hover {
       border-left: 2px solid #0069ff;
-      color: black;
+      color: #031b4e;
+      opacity: 1;
     }
 
     #deploy-section-2nd-row h3 {
@@ -374,6 +384,7 @@
     #designed-section {
       padding: 65px 0;
       background-color: rgb(243, 245, 249);
+      text-align: center;
     }
 
     #designed-section-1st-row {
@@ -394,6 +405,7 @@
     #designed-section-2nd-row .carousel-img {
       width: 100%;
       height: auto;
+      border-radius: 1.5%;
     }
 
     #designed-section-2nd-row i {
@@ -505,6 +517,84 @@
     #service-customers-section-2nd-row tr td:last-child i {
       padding-left: 7px;
     }
+
+    #development-teams-section {
+      padding: 65px 0;
+      background-color: rgb(243, 245, 249);
+      text-align: center;
+    }
+
+    #development-teams-section-1st-row {
+      margin-bottom: 65px;
+    }
+
+    #development-teams-section-1st-row h2 {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    #development-teams-section-1st-row p {
+      margin-top: 16px;
+      color: rgba(3,27,78,.75);
+      font-size: 20px;
+    }
+
+    #development-teams-section-1st-row p a {
+      color: #0069ff;
+      text-decoration: underline;
+    }
+
+    #development-teams-section-1st-row p a:hover {
+      color: blue;
+    }
+
+    #development-teams-section-2nd-row .slide-container {
+      width: 100%;
+      min-height: 294px;
+      border-radius: 1.5%;
+      padding: 30px 40px;
+      background-color: white;
+    }
+
+    #development-teams-section-2nd-row .slide-container img {
+      width: 175px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    #development-teams-section-2nd-row .slide-container p {
+      margin-top: 35px;
+      color: rgba(3,27,78,.75);
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 24px;
+    }
+
+    #development-teams-section-2nd-row .slide-container .name {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    #development-teams-section-2nd-row .slide-container .position {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    #development-teams-section-2nd-row .slide-container a {
+      /* to give a margin to this element (<a> in an inline element by default and margins can't be set for inline elements) */
+      display: inline-block;
+
+      margin-top: 30px;
+      color: #0069ff;
+      font-size: 16px;
+    }
+
+    #development-teams-section-2nd-row .slide-container a:hover {
+      color: blue;
+    }
+
+    #development-teams-section-2nd-row [class*="col-"] > a i {
+      display: none;
+    }
   /* /main */
 
 /* /rules used in specific parts of the page */
@@ -580,6 +670,7 @@
         display: inline;
         position: absolute;
         top: 50%;
+        transform: translate(0, -50%);
       }
 
       #designed-section-2nd-row .fa-chevron-left {
@@ -598,6 +689,34 @@
       #service-customers-section-2nd-row [class*="col-"]:first-child table,
       #service-customers-section-2nd-row [class*="col-"]:last-child table {
         margin-bottom: 0;
+      }
+
+      #development-teams-section-2nd-row {
+        position: relative;
+      }
+
+      #development-teams-section-2nd-row .slide-container {
+        width: 70%;
+        margin: auto;
+      }
+
+      #development-teams-section-2nd-row [class*="col-"] > a i {
+        display: inline;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-left {
+        left: 7%;
+      }
+
+      #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-right {
+        right: 7%;
+      }
+
+      #development-teams-section-2nd-row i:hover {
+        color: #0069ff;
       }
       /* /main */
 
