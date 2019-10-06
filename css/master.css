@@ -63,9 +63,10 @@
 /* /rules used (or usable) in different parts of the page */
 
 /* rules used in specific parts of the page */
-
   #navbar-header-container {
     background-image: url(../img/under-water-background.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
   /* navbar */
@@ -460,8 +461,9 @@
 
     #service-customers-section {
       padding: 65px 0;
-      background-image: url("../img/world-map.svg");
       background-color: #031b4e;
+      background-image: url("../img/world-map.svg");
+      background-repeat: no-repeat;
     }
 
     #service-customers-section-1st-row {
@@ -594,6 +596,32 @@
 
     #development-teams-section-2nd-row [class*="col-"] > a i {
       display: none;
+    }
+
+    #get-started-section {
+      padding: 65px 0;
+      background-image: url("../img/under-water-background.jpg");
+      background-position: -150px bottom;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+
+    #get-started-section h2 {
+      color: white;
+      font-weight: bold;
+    }
+
+    #get-started-section .btn-default {
+      width: 224px;
+      height: 48px;
+      margin-top: 25px;
+      background-color: white;
+      color: #0069ff;
+      font-weight: bold;
+    }
+
+    #get-started-section .btn-default:hover {
+      opacity: 0.8;
     }
   /* /main */
 
