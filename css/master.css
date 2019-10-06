@@ -35,6 +35,7 @@
   }
 
   body {
+    min-width: 350px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
@@ -64,8 +65,7 @@
 
 /* rules used in specific parts of the page */
   #navbar-header-container {
-    background-image: url(../img/under-water-background.jpg);
-    background-repeat: no-repeat;
+    background-color: #0069ff;
   }
 
   /* navbar */
@@ -491,6 +491,7 @@
 
     #service-customers-section-2nd-row tr td {
       border-top: 1px solid rgb(255, 255, 255, 0.2);
+      vertical-align: middle;
     }
 
     #service-customers-section-2nd-row tr:first-child td {
@@ -645,6 +646,12 @@
   @media screen and (min-width: 768px) {
 
     /* rules used in specific parts of the page */
+      #navbar-header-container {
+        background-color: #0069ff;
+        background-image: url(../img/under-water-background.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
 
       /* main */
       #header-2nd-row-2nd-col {
