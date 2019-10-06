@@ -5,27 +5,19 @@
 
   a:focus,
   a:hover {
-
-    /* to overwrite the style of other stylesheets */
     text-decoration: none;
   }
 
   h1, h2, h3, h4, h5, h6, p {
-
-    /* to overwrite the style of other stylesheets */
     margin: 0;
   }
 
-  ul {
-
-    /* to overwrite the style of other stylesheets */
-    padding-left: 0;
+  li {
+    list-style-type: none;
   }
 
-  li {
-
-    /* to overwrite the style of other stylesheets */
-    list-style-type: none;
+  ul {
+    padding-left: 0;
   }
 /* /reset rules */
 
@@ -53,14 +45,6 @@
   #designed-section > .container-fluid,
   #development-teams-section > .container-fluid {
     max-width: 900px;
-  }
-
-  /* to center a box both vertically and horizontally in its parent */
-  .absolute-centering {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 /* /rules used (or usable) in different parts of the page */
 
@@ -705,118 +689,118 @@
       }
 
       /* main */
-      #header-2nd-row-2nd-col {
-        margin-top: 10px;
-      }
+        #header-2nd-row-2nd-col {
+          margin-top: 10px;
+        }
 
-      #header-2nd-row-1st-col {
-        position: relative;
-      }
+        #header-2nd-row-1st-col {
+          position: relative;
+        }
 
-      #header-2nd-row-1st-col .inside-container {
-        position: absolute;
+        #header-2nd-row-1st-col .inside-container {
+          position: absolute;
 
-        /* 447px is the height of the #header-2nd-row-2nd-col */
-        top: calc(447px / 100 * 50);
-        left: 0;
-        transform: translate(0, -50%);
-      }
+          /* 447px is the height of the #header-2nd-row-2nd-col */
+          top: calc(447px / 100 * 50);
+          left: 0;
+          transform: translate(0, -50%);
+        }
 
-      #header-2nd-row-2nd-col form {
-        margin-left: 40px;
-      }
+        #header-2nd-row-2nd-col form {
+          margin-left: 40px;
+        }
 
-      #header-2nd-row-1st-col h1 {
-        font-size: 46px;
-      }
+        #header-2nd-row-1st-col h1 {
+          font-size: 46px;
+        }
 
-      #business-logos-section ul li {
+        #business-logos-section ul li {
 
-        /* to put logo images into two side by side columns */
-        width: calc((100% / 6) - 4px);
-      }
+          /* to put logo images into two side by side columns */
+          width: calc((100% / 6) - 4px);
+        }
 
-      /* paragraph of the second to last and the last col */
-      #deploy-section-2nd-row-2nd-col .row [class*="col"]:nth-child(3) p,
-      #deploy-section-2nd-row-2nd-col .row [class*="col"]:last-child p {
-        margin-bottom: 0;
-      }
+        /* paragraph of the second to last and the last col */
+        #deploy-section-2nd-row-2nd-col .row [class*="col"]:nth-child(3) p,
+        #deploy-section-2nd-row-2nd-col .row [class*="col"]:last-child p {
+          margin-bottom: 0;
+        }
 
-      #designed-section-2nd-row {
-        position: relative;
-      }
+        #designed-section-2nd-row {
+          position: relative;
+        }
 
-      #designed-section-2nd-row .carousel-img {
-        width: 70%;
-        margin: auto;
-      }
+        #designed-section-2nd-row .carousel-img {
+          width: 70%;
+          margin: auto;
+        }
 
-      #designed-section-2nd-row i {
-        display: inline;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
+        #designed-section-2nd-row i {
+          display: inline;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
 
-      #designed-section-2nd-row .fa-chevron-left {
-        left: 7%;
-      }
+        #designed-section-2nd-row .fa-chevron-left {
+          left: 7%;
+        }
 
-      #designed-section-2nd-row .fa-chevron-right {
-        right: 7%;
-      }
+        #designed-section-2nd-row .fa-chevron-right {
+          right: 7%;
+        }
 
-      #designed-section-2nd-row i:hover {
-        color: #0069ff;
-      }
+        #designed-section-2nd-row i:hover {
+          color: #0069ff;
+        }
 
-      /* select the table in the first and last column of the second row */
-      #service-customers-section-2nd-row [class*="col-"]:first-child table,
-      #service-customers-section-2nd-row [class*="col-"]:last-child table {
-        margin-bottom: 0;
-      }
+        /* select the table in the first and last column of the second row */
+        #service-customers-section-2nd-row [class*="col-"]:first-child table,
+        #service-customers-section-2nd-row [class*="col-"]:last-child table {
+          margin-bottom: 0;
+        }
 
-      #development-teams-section-2nd-row {
-        position: relative;
-      }
+        #development-teams-section-2nd-row {
+          position: relative;
+        }
 
-      #development-teams-section-2nd-row .slide-container {
-        width: 70%;
-        margin: auto;
-      }
+        #development-teams-section-2nd-row .slide-container {
+          width: 70%;
+          margin: auto;
+        }
 
-      #development-teams-section-2nd-row [class*="col-"] > a i {
-        display: inline;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
+        #development-teams-section-2nd-row [class*="col-"] > a i {
+          display: inline;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
 
-      #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-left {
-        left: 7%;
-      }
+        #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-left {
+          left: 7%;
+        }
 
-      #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-right {
-        right: 7%;
-      }
+        #development-teams-section-2nd-row [class*="col-"] > a .fa-chevron-right {
+          right: 7%;
+        }
 
-      #development-teams-section-2nd-row i:hover {
-        color: #0069ff;
-      }
+        #development-teams-section-2nd-row i:hover {
+          color: #0069ff;
+        }
       /* /main */
 
       /* footer */
-      #footer-2nd-row {
-        padding: 65px 0;
-        text-align: left;
-      }
+        #footer-2nd-row {
+          padding: 65px 0;
+          text-align: left;
+        }
 
-      #footer-2nd-row ul {
-        float: right;
+        #footer-2nd-row ul {
+          float: right;
 
-        /* to vertically center this element in comparison to the logo image in the left col */
-        margin-top: 11px;
-      }
+          /* to vertically center this element in comparison to the logo image in the left col */
+          margin-top: 11px;
+        }
       /* /footer */
 
     /* rules used in specific parts of the page */
