@@ -65,7 +65,6 @@
 /* rules used in specific parts of the page */
   #navbar-header-container {
     background-image: url(../img/under-water-background.jpg);
-    background-position: bottom;
     background-repeat: no-repeat;
   }
 
@@ -659,8 +658,8 @@
       #header-2nd-row-1st-col .inside-container {
         position: absolute;
 
-        /* 505px is the height of the #header-2nd-row-2nd-col */
-        top: calc(505px / 100 * 50);
+        /* 447px is the height of the #header-2nd-row-2nd-col */
+        top: calc(447px / 100 * 50);
         left: 0;
         transform: translate(0, -50%);
       }
