@@ -45,7 +45,8 @@
   #business-logos-section > .container-fluid,
   #deploy-section > .container-fluid,
   #built-for-business-section > .container-fluid,
-  #service-customers-section > .container-fluid {
+  #service-customers-section > .container-fluid,
+  footer > .container-fluid {
     max-width: 1200px;
   }
 
@@ -69,10 +70,6 @@
   }
 
   /* navbar */
-    #navbar .container-fluid {
-      max-width: 1300px;
-    }
-
     #navbar .row-lower-res {
       height: 90px;
     }
@@ -625,6 +622,61 @@
     }
   /* /main */
 
+  /* footer */
+    footer {
+      background-color: #010e28;
+    }
+
+    #footer-1st-row {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 40px 0 55px;
+    }
+
+    #footer-1st-row h4 {
+      margin-top: 25px;
+      color: white;
+      font-size: 14px;
+    }
+
+    #footer-1st-row ul {
+      margin-top: 20px;
+    }
+
+    #footer-1st-row li {
+      margin-top: 10px;
+    }
+
+    #footer-1st-row li a {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    #footer-1st-row li a:hover {
+      color: white;
+    }
+
+    #footer-2nd-row {
+      padding: 65px 0;
+      text-align: center;
+    }
+
+    #footer-2nd-row p {
+      display: inline;
+      margin-left: 10px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    #footer-2nd-row ul {
+      margin-top: 30px;
+    }
+
+    #footer-2nd-row [class*="col"]:last-child a {
+      margin-left: 15px;
+    }
+
+    #footer-2nd-row [class*="col"]:last-child img:hover {
+      filter: sepia(1);
+    }
+  /* /footer */
+
 /* /rules used in specific parts of the page */
 
 /* rules for specific width ranges */
@@ -647,7 +699,6 @@
 
     /* rules used in specific parts of the page */
       #navbar-header-container {
-        background-color: #0069ff;
         background-image: url(../img/under-water-background.jpg);
         background-position: bottom;
         background-repeat: no-repeat;
@@ -754,6 +805,20 @@
       }
       /* /main */
 
+      /* footer */
+      #footer-2nd-row {
+        padding: 65px 0;
+        text-align: left;
+      }
+
+      #footer-2nd-row ul {
+        float: right;
+
+        /* to vertically center this element in comparison to the logo image in the left col */
+        margin-top: 11px;
+      }
+      /* /footer */
+
     /* rules used in specific parts of the page */
 
   }
@@ -763,6 +828,10 @@
     /* rules used in specific parts of the page */
 
       /* navbar */
+        #navbar .container-fluid {
+          max-width: 1300px;
+        }
+
         #navbar {
           position: fixed;
           width: 100%;
