@@ -90,7 +90,6 @@
       opacity: 0.9;
     }
 
-    #navbar a:focus,
     #navbar a:hover {
       color: #0069ff;
       opacity: 1;
